@@ -1,0 +1,28 @@
+# Java
+/target/
+*.class
+*.jar
+*.war
+*.ear
+
+# Maven
+/.mvn/
+!/.mvn/wrapper/maven-wrapper.jar
+
+# Node
+/node_modules/
+/npm-debug.log*
+/yarn-debug.log*
+/yarn-error.log*
+/package-lock.json
+
+# Angular
+/dist/
+/out-tsc/
+
+# IDEs
+/.idea/
+.vscode/
+
+# System
+.DS_Store

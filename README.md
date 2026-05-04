@@ -27,6 +27,10 @@ Then open `http://localhost:8080` in your browser.
 - `app.js` — game logic
 - `package.json` — project metadata and start script
 
+## Additional Projects
+
+- `task-manager/` — Java + Angular task manager / to-do application
+
 ## How to Play
 
 1. Click an empty cell to place `X` or `O`.

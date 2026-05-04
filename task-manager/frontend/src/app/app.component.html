@@ -1,0 +1,37 @@
+<div class="page-shell">
+  <section class="header">
+    <h1>Task Manager</h1>
+    <p>Simple Java + Angular to-do application.</p>
+  </section>
+
+  <section class="task-form">
+    <input
+      type="text"
+      [(ngModel)]="newTaskTitle"
+      placeholder="Add a new task"
+      aria-label="New task title"
+    />
+    <button (click)="addTask()">Add Task</button>
+  </section>
+
+  <section class="feedback" *ngIf="errorMessage">
+    {{ errorMessage }}
+  </section>
+
+  <section class="task-list">
+    <div class="task-card" *ngFor="let task of tasks">
+      <label [class.completed]="task.completed">
+        <input type="checkbox" [checked]="task.completed" (change)="toggleCompletion(task)" />
+        {{ task.title }}
+      </label>
+      <button class="delete-button" (click)="deleteTask(task)">Remove</button>
+    </div>
+
+    <div class="empty-state" *ngIf="!loading && tasks.length === 0">
+      No tasks yet. Add one to get started.
+    </div>
+    <div class="loading" *ngIf="loading">
+      Loading tasks...
+    </div>
+  </section>
+</div>
