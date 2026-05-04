@@ -1,0 +1,12 @@
+{
+  "name": "tic-tac-toe-web",
+  "version": "1.0.0",
+  "description": "A simple Tic-Tac-Toe gaming application built with HTML, CSS, and JavaScript.",
+  "private": true,
+  "scripts": {
+    "start": "python3 -m http.server 8080",
+    "open": "xdg-open http://localhost:8080"
+  },
+  "author": "",
+  "license": "MIT"
+}
